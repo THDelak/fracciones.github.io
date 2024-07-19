@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fracciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="location.href='index.html'">Inicio</button>
+        <button onclick="location.href='exercises.html'">Ejercicios</button>
+        <button onclick="location.href='calculator.html'">Calculadora</button>
+    </nav>
+    <main>
+        <br><br>
+        <h1>Calculadora de Fracciones</h1>
+        <div id="fraction-calculator">
+            <div class="fraction-input">
+                <input type="text" id="numerator1" placeholder="Numerador">
+                <div class="fraction-bar"></div>
+                <input type="text" id="denominator1" placeholder="Denominador">
+            </div>
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <div class="fraction-input">
+                <input type="text" id="numerator2" placeholder="Numerador">
+                <div class="fraction-bar"></div>
+                <input type="text" id="denominator2" placeholder="Denominador">
+            </div>
+            <button onclick="calculate()">Calcular</button>
+        </div>
+        <div id="result-steps"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
